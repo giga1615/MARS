@@ -35,62 +35,7 @@
 
 2021.04.12 ~ 2021.05.14
 
-<br/>
-
-```mermaid
-gantt
-    dateFormat  MM-DD
-    title       MARS 진행상황
-    %% excludes    weekends
-    %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
-
-
-    section 프로젝트 준비
-    주제 선정				  :done, 04-12, 4d
-    기능 상세 도출			:done, 04-16, 4d
-    Git,Jira 구성            :done, 04-17, 3d
-    화면 기획				  :crit, active, 04-19, 3d
-    최종 PPT, UCC            :crit, 05-16, 3d
-    기획 PPT : crit, 04-20, 3d
-	
-	section Frontend
-	화면 기획 		   	: crit, active, 04-19, 4d
-	화면 디자인 		   	:  crit, active, 04-19, 4d
-    스플래시화면		   	: map, 04-23, 7d
-   	Story(연도별기록)	         : ar, 04-23, 7d
-    로그인페이지   	  : friends, 04-23, 7d
-	AR Location  : 04-27, 11d
-    AR 그리기	      : camera, 05-05, 4d
-    캡슐 생성 페이지 : camera, 05-08, 4d
-    캡슐 상세 페이지 : camera, 05-12, 4d
-    
-    친구페이지   	  : friends, 05-05, 7d
-    친구상세페이지 : 05-12, 4d
-    지도   	  : friends, 05-05, 5d
-    연동(front&back)		  : capsule1, 05-09, 7d 
-        
-        
-    section backend
-    회원관리 	: crit, active, 04-21, 4d
-	로그인     	 : crit, active, login, 04-21, 4d
-	캡슐관리     	 : capsule, after login, 5d
-	친구관리		: dd, after login, 5d
-	알림		: after dd,9d
-    
-    
-    section 배포
-    배포		   : 05-12, 4d
-
-    
-    
-    section 디버깅
-
-    %%section 기타
-    %%UCC제작 :05-23, 3d
-    %%발표준비 :05-26, 2d
-```
-
-<br/>
+<br/><br/>
 
 ## 🔮 기획의도
 
