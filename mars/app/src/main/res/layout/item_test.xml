@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/layout_bg">
+
+    <TextView
+        android:id="@+id/create_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="@font/nanumsquare"
+        android:text="YYYY/MM/DD"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/lock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/create_date"
+        app:layout_constraintTop_toBottomOf="@+id/create_date" />
+
+    <TextView
+        android:id="@+id/where"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare"
+        android:text="Where."
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/address"
+        app:layout_constraintStart_toStartOf="@+id/with" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/nanumsquare"
+        android:text="롯데월드(서울 송파구 올림픽로 240)"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/capsule_friends"
+        app:layout_constraintStart_toEndOf="@+id/where" />
+
+    <TextView
+        android:id="@+id/with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/nanumsquare"
+        android:text="With."
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/capsule_friends"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/capsule_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="17dp"
+        android:fontFamily="@font/nanumsquare"
+        android:text="정연, 지선"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/with" />
+
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/lock"
+        app:layout_constraintBottom_toBottomOf="@+id/unlock"
+        app:layout_constraintEnd_toStartOf="@+id/open_date"
+        app:layout_constraintStart_toEndOf="@+id/create_date"
+        app:layout_constraintTop_toTopOf="@+id/unlock" />
+
+    <ImageView
+        android:id="@+id/unlock"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/unlock"
+        app:layout_constraintEnd_toStartOf="@+id/open_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/open_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/nanumsquare"
+        android:text="D-60"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/unlock"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

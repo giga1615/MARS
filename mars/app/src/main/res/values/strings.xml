@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MARS</string>
+
+    <!--  nav bar menu  -->
+    <string name="nav_map">MAP</string>
+    <string name="nav_ar">AR CAMERA</string>
+    <string name="nav_friend">FRIEND</string>
+    <string name="nav_story">STORY</string>
+    <string name="action_settings">Anything</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="string_internet_connection_not_available">Internet Connection Not Available</string>
+    <string name="string_some_thing_wrong">Something went wrong.</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="chooser_title">Choose Files</string>
+</resources>

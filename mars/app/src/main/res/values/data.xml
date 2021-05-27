@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="people">
+        <item>신충현</item>
+        <item>황윤호</item>
+        <item>이도건</item>
+        <item>박다윤</item>
+        <item>윤지선</item>
+    </string-array>
+
+    <string-array name="email">
+        <item>chunghyun</item>
+        <item>yoonho</item>
+        <item>dogun</item>
+        <item>dayun</item>
+        <item>jisun</item>
+    </string-array>
+</resources>

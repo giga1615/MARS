@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CapsuleDetailActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:id="@+id/dday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nanumsquare"
+                    android:letterSpacing="0.08"
+                    android:paddingLeft="10dp"
+                    android:text="D-day"
+                    android:textColor="#e8b638"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nanumsquare"
+                    android:letterSpacing="0.04"
+                    android:paddingLeft="10dp"
+                    android:text="시험 끝나고 정연이랑"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/create_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nanumsquare"
+                    android:letterSpacing="0.08"
+                    android:paddingLeft="10dp"
+                    android:text="2019-06-22"
+                    android:textColor="@color/deep_grey"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nanumsquare"
+                    android:letterSpacing="0.08"
+                    android:paddingLeft="10dp"
+                    android:text="잠실 롯데월드"
+                    android:textColor="@color/deep_grey"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nanumsquare"
+                    android:letterSpacing="0.08"
+                    android:paddingLeft="10dp"
+                    android:text="오늘의 음악"
+                    android:textColor="@color/deep_grey"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="80dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/coner_background"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="3dp">
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:lineSpacingExtra="2dp"
+                    android:hint="기억에 남는 일을 기록해주세요."
+                    android:textSize="17dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="2dp"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/coner_background">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp">
+
+                    <include
+                        android:id="@+id/view_page"
+                        layout="@layout/view_page" />
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/with_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nanumsquare"
+                android:letterSpacing="0.08"
+                android:paddingLeft="10dp"
+                android:text="&#64;정연"
+                android:textColor="@color/gray"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.github.mmin18.widget.RealtimeBlurView
+        android:id="@+id/blur_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        app:realtimeBlurRadius="10dp"
+        app:realtimeOverlayColor="#8000"/>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/sub_toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

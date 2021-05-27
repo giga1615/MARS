@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "443181884743",
+    "project_id": "a403-mars",
+    "storage_bucket": "a403-mars.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443181884743:android:29baa9242d14b1f016d862",
+        "android_client_info": {
+          "package_name": "com.a403.mars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443181884743-rfujj2676pmhh904mk1jf5p4gidueuk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.a403.mars",
+            "certificate_hash": "ea953dc8b33d26de9f61e47e5ecc75c8ce9bafc6"
+          }
+        },
+        {
+          "client_id": "443181884743-nad29j23knme1h17g8amgbbt8uefmq0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm_iO07oGKaLYrM2ETDAGzH6YoLXc70cE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443181884743-nad29j23knme1h17g8amgbbt8uefmq0k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

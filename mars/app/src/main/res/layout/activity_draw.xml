@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawActivity" android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/topView"
+        android:orientation="vertical">
+
+        <android.opengl.GLSurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/surfaceview"/>
+
+    </FrameLayout>
+
+    <include layout="@layout/content_main"
+        android:id="@+id/content_brush"/>
+    <include layout="@layout/content_camera"
+        android:id="@+id/content_camera"/>
+
+    <include
+        android:id="@+id/captureLayout"
+        layout="@layout/content_capture"
+        android:visibility="invisible" />
+</RelativeLayout>

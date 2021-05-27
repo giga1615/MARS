@@ -1,0 +1,100 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+
+    defaultConfig {
+        applicationId "com.a403.mars"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 6
+        versionName "6.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "com.android.support:design:29.0.0"
+
+    // 스토리 그래프
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    // AR
+    implementation "com.google.ar.sceneform:core:1.15.0"
+    implementation 'com.amap.api:location:latest.integration'
+    // 네이버 지도 SDK
+    implementation 'com.naver.maps:map-sdk:3.11.0'
+    // 현재 위치 표시
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.github.pedroSG94:AutoPermissions:1.0.3'
+    // 카카오 로그인
+    implementation "com.kakao.sdk:v2-user:2.4.2" // 카카오 로그인
+    implementation "com.kakao.sdk:v2-talk:2.4.2" // 친구, 메시지(카카오톡)
+    implementation "com.kakao.sdk:v2-story:2.4.2" // 카카오스토리
+    implementation "com.kakao.sdk:v2-link:2.4.2" // 메시지(카카오링크)
+    implementation "com.kakao.sdk:v2-navi:2.4.2" // 카카오내비
+
+    implementation 'com.google.android.material:material:1.1.0'
+
+    // AR 그리기
+    implementation 'javax.vecmath:vecmath:1.5.2'
+    implementation 'com.google.ar:core:1.18.0'
+    implementation 'com.github.duanhong169:colorpicker:1.1.6'
+
+    // Volley
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    // FCM 푸시 알림
+    implementation "com.google.firebase:firebase-core:11.0.4"
+    implementation "com.google.firebase:firebase-messaging:17.3.4"
+    implementation "com.firebase:firebase-jobdispatcher:0.8.5"
+
+    // 이미지
+    implementation 'com.daimajia.swipelayout:library:1.2.0@aar'
+    // 이미지 라운드
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    // ViewPager2
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    // 친구 목록 검색 dialog
+    implementation 'com.github.MdFarhanRaja:SearchableSpinner:2.1'
+
+    // 캡슐 생성
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation "com.squareup.okhttp3:okhttp:3.12.0"
+
+    // JWT 디코딩
+    implementation 'com.auth0.android:jwtdecode:2.0.0'
+
+    // 블러처리
+    implementation 'com.github.mmin18:realtimeblurview:1.2.1'
+}
+apply plugin: 'com.google.gms.google-services'
